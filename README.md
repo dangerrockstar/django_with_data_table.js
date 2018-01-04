@@ -190,14 +190,11 @@ $(document).ready(function() {
         
         
     });    
-
-# that block refrese your data every 5 sec
     // setInterval( function () {
     //     dt_table.ajax.reload();
-    // }, 5000 );
-    
-    
+    // }, 5000 );    
 });
+# that block refrese your data every 5 sec
 ````````
 
 Built-in Ajax

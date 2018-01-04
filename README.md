@@ -115,6 +115,7 @@ And pass a table instance to the view.
 add html into your templates file folder
 ----------
 your_app/templates/folder_name/base.html
+::
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
       <head>
@@ -133,6 +134,7 @@ your_app/templates/folder_name/base.html
 add html into your templates file folder
 ----------
 your_app/templates/folder_name/order_list_json.html
+::
 {% extends "base.html" %}
 
 {% block extra_head %}
@@ -169,6 +171,7 @@ your_app/templates/folder_name/order_list_json.html
 add javascript into your static file folder
 ----------
 your_app/static/folder_name/internalorder_datatables.js
+::
 $(document).ready(function() {
     var dt_table = $('table').DataTable({
         fixedHeader: true,

@@ -130,10 +130,8 @@ your_app/templates/folder_name/base.html
           {% block content %}{% endblock %}
       </body>
   </html>
-
-add html into your templates file folder
-----------
-your_app/templates/folder_name/order_list_json.html
+::
+add html into your templates file folder your_app/templates/folder_name/order_list_json.html
 ::
 {% extends "base.html" %}
 

@@ -169,7 +169,7 @@ add html into your templates file folder your_app/templates/folder_name/order_li
 add javascript into your static file folder
 ----------
 your_app/static/folder_name/internalorder_datatables.js
-::
+
 $(document).ready(function() {
     var dt_table = $('table').DataTable({
         fixedHeader: true,

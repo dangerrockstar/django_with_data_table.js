@@ -7,7 +7,7 @@ $(document).ready(function() {
             {orderable: true,
              searchable: true,
              className: "center",
-             targets: [0,1,2,3,4,5]
+             targets: [0,5]
             }
         ],
         searching: true,
@@ -15,14 +15,19 @@ $(document).ready(function() {
         serverSide: true,
         stateSave: true,
         ajax: USERS_LIST_JSON_URL,
+
+        "scrollY":        "400px",
+        "scrollCollapse": true,
+        "paging":         false
+        
         
         
     });    
 
 
-    // setInterval( function () {
-    //     dt_table.ajax.reload();
-    // }, 5000 );
+    setInterval( function () {
+        dt_table.ajax.reload();
+    }, 5000 );
     
     
 });

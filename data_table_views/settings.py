@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'data_table_views.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'test',
+        'NAME':'database name',
         'USER':'root',
-        'PASSWORD':'matkhol1991',
-        'HOST':'127.0.0.1',
+        'PASSWORD':'root',
+        'HOST':'localhost',
         'PORT':'3306',
     }
 }

@@ -1,8 +1,12 @@
 $(document).ready(function() {
     var dt_table = $('table').DataTable({
+
+
+
         fixedHeader: true,
-        order: [[ 0, "desc" ]],
+        order: [[ 0, 'asc' ]],
         lengthMenu: [[20 ,50,100,200], [20,50,100,200]],
+
         columnDefs: [
             {orderable: true,
              searchable: true,
@@ -25,9 +29,26 @@ $(document).ready(function() {
     });    
 
 
-    setInterval( function () {
-        dt_table.ajax.reload();
-    }, 5000 );
+    // setInterval( function () {
+    //     dt_table.ajax.reload();
+    // }, 5000 );
     
     
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

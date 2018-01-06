@@ -1,48 +1,50 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
     <head>
-        <title>Welcome in Internalorder Table</title>
         <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-        {% block extra_head %}{% endblock %}
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #9b0799;
-            }
-
-            li {
-                float: left;
-            }
-
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-
-            li a:hover {
-                background-color: #111;
-            }
-        </style>
-    </head>
-    <body bgcolor="#97a81b">
-    <div>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#news">News</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-    </div>
-    <div>
         
-    </div>
-    <h2> </h2>
+         <!-- ##################### Multiple page in single view######################## -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
+        <!-- ############################################### -->
+        
+        <title>Welcome in Internalorder Table</title>
+        
+        {% block extra_head %}{% endblock %}
+        
+    </head>
+    <body >
+    
+    <div class="container">
+        <h3> </h3>
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="active"><a href="#hometab" role="tab" data-toggle="tab">Internalorder Table</a></li>
+          <li><a href="#javatab" role="tab" data-toggle="tab">Java</a></li>
+          <li><a href="#csharptab" role="tab" data-toggle="tab">C#</a></li>
+          <li><a href="#mysqltab" role="tab" data-toggle="tab">MySQL</a></li>
+          <li><a href="#jquerytab" role="tab" data-toggle="tab">jQuery</a></li>
+         </li> 
+        </ul>
+        
+
+       <!-- Tab panes -->
+        <!-- <div class="tab-content">
+          <div class="tab-pane active" id="hometab">Write something for home tab</div>
+          <div class="tab-pane" id="javatab">The Java is an object-oriented programming language <br /> that was developed by James Gosling from the Sun Microsystems in 1995.</div>
+          <div class="tab-pane" id="csharptab">C# is also a programming language</div>
+          <div class="tab-pane" id="mysqltab">MySQL is a databased mostly used for web applications.</div>
+          <div class="tab-pane" id="jquerytab">jQuery content here</div>
+      
+    </div> -->
+
         {% block content %}{% endblock %}
+
     </body>
 </html>

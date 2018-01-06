@@ -24,3 +24,11 @@ class OrderListJson(BaseDatatableView):
 
 class OrderList1(TemplateView):
     template_name  = "home_app/order_list_json.html"
+
+
+# class model_fields():
+#     new=Internalorder._meta.get_fields(include_parents=True, include_hidden=False)
+#     def fields_name(self):
+#         return HttpResponse(new)
+        
+        

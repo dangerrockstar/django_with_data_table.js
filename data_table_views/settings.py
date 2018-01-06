@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'data_table_views.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'database name',
+        'NAME':'test',
         'USER':'root',
-        'PASSWORD':'root',
+        'PASSWORD':'matkhol1991',
         'HOST':'localhost',
         'PORT':'3306',
     }

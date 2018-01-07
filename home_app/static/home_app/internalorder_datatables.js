@@ -20,7 +20,8 @@ $(document).ready(function() {
         stateSave: true,
         ajax: USERS_LIST_JSON_URL,
 
-        "scrollY":        "400px",
+        "scrollY": "400px",
+        "scrollX": true,
         "scrollCollapse": true,
         "paging":         false
         
